@@ -1,0 +1,9 @@
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+campus.db-journal
+campus.db-wal
+campus.db-shm
+.DS_Store
