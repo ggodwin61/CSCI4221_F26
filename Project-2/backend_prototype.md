@@ -6,7 +6,7 @@
 
 ## Purpose and my contribution
 
-My prototype demonstrates how the campus map application can organize and provide building, floor, and indoor-location information to the frontend. I took responsibility for backend development at the September 22 meeting and started development using Node.js and SQLite on September 29. I worked in DragonOS.
+My prototype demonstrates how the campus map application can organize and provide building and indoor-location information for a single-floor interface. I took responsibility for backend development at the September 22 meeting and started development using Node.js and SQLite on September 29. I worked in DragonOS.
 
 ## Technology and files
 
@@ -26,14 +26,14 @@ Install and run instructions are in the [backend README](school-map-backend/READ
 
 ## Prototype data structure
 
-A building has floors, and a floor has indoor locations. Building records include name, code, description, latitude, and longitude. Floors include a building reference, floor number, name, and optional map layer. Locations include a floor reference, name, room number, type, description, and optional positions within a floor plan.
+A building has indoor locations on one floor. Building records include name, code, description, latitude, and longitude. Locations include a building reference, name, room number, type, description, and optional positions within the floor plan. The separate floor table and map-layer field were removed.
 
 The supplied database was inspected read-only and contains:
 
 | Data | Verified contents |
 | --- | --- |
 | Buildings | 1: Billy C. Black Building, code BCB |
-| Floors | 3: First Floor, Second Floor, Third Floor |
+| Floor model | Single floor with no selectable layers |
 | Indoor locations | 0 records; schema and API routes are present |
 
 The database contains prototype data. Geographic accuracy and real room information have not been verified.
@@ -48,9 +48,8 @@ The database contains prototype data. Geographic accuracy and real room informat
 | GET | `/api/buildings/:id` | Retrieve one building |
 | POST | `/api/buildings` | Add a building |
 | PUT | `/api/buildings/:id` | Update a building |
-| GET | `/api/buildings/:id/floors` | Retrieve a building's floors |
-| GET | `/api/floors/:floorId/locations` | Retrieve locations on a floor |
-| POST | `/api/floors/:floorId/locations` | Add a location to a floor |
+| GET | `/api/buildings/:id/locations` | Retrieve locations on the building's single floor |
+| POST | `/api/buildings/:id/locations` | Add a location to the building's single floor |
 
 The source includes required-field checks for building and location writes, a missing-search-query response, and not-found responses for individual building retrieval and updates.
 
@@ -58,8 +57,7 @@ The source includes required-field checks for building and location writes, a mi
 
 1. A user searches for Billy C. Black Building in the campus map.
 2. The frontend requests matching buildings.
-3. The user selects the building and requests its floors.
-4. The user chooses a floor and requests its indoor locations.
+3. The user selects the building and requests its indoor locations.
 
 The backend provides the API structure for this flow. The supplied archive does not include a frontend or a browser-based demo, and it does not yet contain indoor-location sample records.
 
@@ -68,15 +66,15 @@ The backend provides the API structure for this flow. The supplied archive does 
 - `node --check server.js`: passed.
 - `node --check database.js`: passed.
 - SQLite `PRAGMA integrity_check` on the supplied database: returned `ok`.
-- Read-only queries confirmed the building and floor data and the empty locations table.
+- Read-only queries confirmed the building data, single-floor schema, and empty locations table.
 
 These checks validate JavaScript syntax and the supplied database, not live HTTP behavior. Dependencies have not been installed and the server/API has not been run in this workspace. No automated test suite is included.
 
 ## Remaining prototype work
 
 - Run the server and record actual HTTP responses or screenshots as submission evidence.
-- Add verified sample indoor locations if needed to demonstrate floor navigation.
-- Review handling of nonexistent floors and invalid data before expanding the prototype.
+- Add verified sample indoor locations if needed to demonstrate map navigation.
+- Review handling of nonexistent buildings and invalid data before expanding the prototype.
 - Enable and verify SQLite foreign-key enforcement; the schema declares relationships, but the source does not enable `PRAGMA foreign_keys = ON`.
 - Fix two small logging typos when continuing development: `err.messasge` in `database.js`, and the single-quoted startup string that prints `${PORT}` literally in `server.js`.
 - Integrate with the frontend in a later development step.

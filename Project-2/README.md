@@ -18,7 +18,7 @@
 
 I am working on the settings-page prototype in Figma and developing the backend prototype using Node.js, Express, and SQLite on DragonOS. The prototype covers campus selection, map appearance, location preferences, accessibility, notifications, and help/privacy options.
 
-I agreed to handle backend development on September 22 and started development with Node.js and SQLite on September 29. The backend prototype supports building, floor, and indoor-location data. The actual DragonOS source and database are included in `school-map-backend/`. JavaScript syntax and database integrity checks passed; live API response evidence is still pending. The Figma settings design is an additional contribution.
+I agreed to handle backend development on September 22 and started development with Node.js and SQLite on September 29. The backend prototype supports building and indoor-location data for a single-floor map. The actual DragonOS source and database are included in `school-map-backend/`. JavaScript syntax and database integrity checks passed; live API response evidence is still pending. The Figma settings design is an additional contribution.
 
 ## My meeting records
 

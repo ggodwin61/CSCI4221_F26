@@ -4,7 +4,7 @@
 **Group:** 1  
 **Sprint:** 2 — Project 2
 
-This is the Node.js/Express and SQLite backend developed on DragonOS. It was copied from the supplied `school-map-backend.tar.gz` archive without changing the original source files.
+This is the Node.js/Express and SQLite backend developed on DragonOS and simplified to use one floor without selectable map layers.
 
 ## Run the prototype
 
@@ -27,9 +27,9 @@ Dependencies are installed for the current machine rather than copied from Drago
 curl http://localhost:3000/api/buildings
 curl 'http://localhost:3000/api/buildings/search?q=Billy'
 curl http://localhost:3000/api/buildings/1
-curl http://localhost:3000/api/buildings/1/floors
+curl http://localhost:3000/api/buildings/1/locations
 ```
 
-Use a returned floor ID for `GET /api/floors/:floorId/locations`. The supplied database has no location records yet, so an empty array is expected for an existing floor.
+The prototype uses a single floor, so indoor locations are requested directly from the selected building. The supplied database has no location records yet, so an empty array is expected for an existing building.
 
 See [backend_prototype.md](../backend_prototype.md) for the API inventory, verified sample data, and validation limits.

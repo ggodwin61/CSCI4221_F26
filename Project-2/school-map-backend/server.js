@@ -151,15 +151,16 @@ app.put('/api/buildings/:id', (req, res) => {
     );
 });
 
-// Get all floors for a building
-app.get('/api/buildings/:id/floors', (req, res) => {
+// Get all indoor locations for a building's single floor
+app.get('/api/buildings/:id/locations', (req, res) => {
     const buildingId = req.params.id;
 
     const sql = `
-        SELECT id, building_id, floor_number, name, map_layer
-        FROM floors
+        SELECT id, building_id, name, room_number, type,
+               description, x_position, y_position
+        FROM locations
         WHERE building_id = ?
-        ORDER BY floor_number
+        ORDER BY room_number, name
     `;
 
     db.all(sql, [buildingId], (err, rows) => {
@@ -174,35 +175,9 @@ app.get('/api/buildings/:id/floors', (req, res) => {
     });
 });
 
-
-
-// Get all locations for a floor
-app.get('/api/floors/:floorId/locations', (req, res) => {
-    const floorId = req.params.floorId;
-
-    const sql = `
-        SELECT id, floor_id, name, room_number, type,
-               description, x_position, y_position
-        FROM locations
-        WHERE floor_id = ?
-        ORDER BY room_number, name
-    `;
-
-    db.all(sql, [floorId], (err, rows) => {
-        if (err) {
-            console.error(err.message);
-            return res.status(500).json({
-                error: 'Database error'
-            });
-        }
-
-        res.json(rows);
-    });
-});
-
-// Add a location to a floor
-app.post('/api/floors/:floorId/locations', (req, res) => {
-    const floorId = req.params.floorId;
+// Add an indoor location to a building's single floor
+app.post('/api/buildings/:id/locations', (req, res) => {
+    const buildingId = req.params.id;
 
     const {
         name,
@@ -221,14 +196,14 @@ app.post('/api/floors/:floorId/locations', (req, res) => {
 
     const sql = `
         INSERT INTO locations
-        (floor_id, name, room_number, type, description, x_position, y_position)
+        (building_id, name, room_number, type, description, x_position, y_position)
         VALUES (?, ?, ?, ?, ?, ?, ?)
     `;
 
     db.run(
         sql,
         [
-            floorId,
+            buildingId,
             name,
             room_number,
             type,
@@ -246,7 +221,7 @@ app.post('/api/floors/:floorId/locations', (req, res) => {
 
             res.status(201).json({
                 id: this.lastID,
-                floor_id: Number(floorId),
+                building_id: Number(buildingId),
                 name,
                 room_number,
                 type,
@@ -259,5 +234,5 @@ app.post('/api/floors/:floorId/locations', (req, res) => {
 });
 
 app.listen(PORT, () => {
-        console.log('Server running on http://localhost:${PORT}');
+        console.log(`Server running on http://localhost:${PORT}`);
 });

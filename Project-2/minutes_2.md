@@ -21,7 +21,7 @@ I started backend development for the campus map application using Node.js and S
 
 ## Backend development detail
 
-My backend work uses Node.js with Express for the server and SQLite for campus data. The implementation now includes building listing, search, retrieval, creation and updates, plus floor and indoor-location routes. The database contains Billy C. Black Building and three floor records. See [backend-notes.md](backend-notes.md) for the detailed implementation record. This is a summary of the development work, not a claim that all features were finished during this meeting.
+My backend work uses Node.js with Express for the server and SQLite for campus data. The implementation includes building listing, search, retrieval, creation and updates, plus indoor-location routes for a single-floor map. The database contains Billy C. Black Building without separate floor layers. See [backend-notes.md](backend-notes.md) for the detailed implementation record. This is a summary of the development work, not a claim that all features were finished during this meeting.
 
 ## My follow-up action
 
