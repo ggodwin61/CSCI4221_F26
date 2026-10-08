@@ -8,7 +8,7 @@
 
 ## My responsibility and starting point
 
-At our September 22 meeting, I agreed to handle backend development for the campus map application. At our September 29 meeting, I started backend development using Node.js and SQLite.
+At our September 22 meeting, I agreed to handle backend development for the campus map application. At our September 29 meeting, I started backend development using Node.js and SQLite which was taught in Systems Analysis 1.   
 
 Both meetings ran from 10:45 a.m. to 11:45 a.m. The meeting minutes record my progress at each meeting; the following description summarizes the broader backend work discussed during development, rather than claiming everything was completed during the September 29 meeting.
 
