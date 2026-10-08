@@ -25,6 +25,4 @@ The prototype uses Node.js with Express and SQLite. It supports listing, searchi
 
 ## My follow-up action
 
-Run the backend and verify its API responses, then add verified sample indoor-location data if needed to demonstrate the map workflow. Continue documenting any frontend integration work separately.
-
-These are my individual meeting notes. Other group members maintain their own files. The one-hour meeting duration is not an estimate of the time needed to complete the PBI. Confirm the meeting date and time against the group's actual meeting record.
+Run the backend and verify its API responses, then add verified sample indoor-location data if needed to demonstrate the map workflow.

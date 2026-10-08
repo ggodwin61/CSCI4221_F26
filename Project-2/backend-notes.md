@@ -64,15 +64,3 @@ The prototype contains these routes plus building creation and update routes. Ja
 A user can search for Billy C. Black Building, select it, and view the locations on its single floor. My backend supplies the building and location data needed to support that interface without a floor selector.
 
 The Figma design shows the interface. The backend prototype demonstrates the application's data structure and API approach. Frontend integration remains a separate step to verify.
-
-## Submission evidence and next steps
-
-- [x] Record my backend responsibility from September 22.
-- [x] Record that Node.js/SQLite development started September 29.
-- [x] Copy the actual DragonOS backend source files into this Project-2 folder.
-- [ ] Commit and push the Project-2 folder to the submission repository.
-- [x] Document dependency installation with `npm ci` and startup with `node server.js`.
-- [ ] Verify API responses and include test output or screenshots.
-- [ ] Document current limitations and remaining integration work.
-
-A browser-based backend demo was suggested in the earlier discussion. It is a possible follow-up, not a confirmed completed deliverable.

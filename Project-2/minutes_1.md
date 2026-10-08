@@ -22,5 +22,3 @@ We discussed what we would each be doing for the campus map application. I agree
 ## My follow-up action
 
 Begin backend development and identify the data the campus map application needs.
-
-These are my individual meeting notes. Other group members maintain their own files. The one-hour meeting duration is not an estimate of the time needed to complete the PBI.

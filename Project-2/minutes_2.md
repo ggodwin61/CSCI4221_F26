@@ -26,5 +26,3 @@ My backend work uses Node.js with Express for the server and SQLite for campus d
 ## My follow-up action
 
 Continue the Node.js and SQLite backend prototype, develop the building/floor/location structure, and document progress for the next meeting.
-
-These are my individual meeting notes. Other group members maintain their own files. The one-hour meeting duration is not an estimate of the time needed to complete the PBI.
