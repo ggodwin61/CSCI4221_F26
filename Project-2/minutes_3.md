@@ -4,8 +4,8 @@ Garret Godwin
 
 **Group:** 1  
 **Sprint:** 2 — Project 2  
-**Meeting date:** October 8, 2026 (confirm)  
-**Time:** 10:45 a.m.–11:45 a.m. (confirm)  
+**Meeting date:** October 8, 2026
+**Time:** 10:45 a.m.–11:45 a.m.
 **Duration:** 1 hour  
 **Author:** Garret Godwin
 
