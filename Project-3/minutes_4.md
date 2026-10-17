@@ -32,7 +32,7 @@ The group could not meet this week because group members were sick. Instead, we 
 
 | PBI | Status | Sprint | Estimate | Assigned | Reviewer |
 | --- | --- | --- | --- | --- | --- |
-| Classroom Search feature description | Draft completed; awaiting review | 3 | 1 hour | Garret Godwin | To be confirmed |
-| Dr. Phillip Journey persona | Draft completed; awaiting review | 3 | 30 minutes | Garret Godwin | To be confirmed |
-| Assigned Classroom scenario | Draft completed; awaiting review | 3 | Not 30 minutes | Garret Godwin | To be confirmed |
-| GP-1-1 Classroom Search user story | Draft completed; awaiting review | 3 | 30 minutes | Garret Godwin | To be confirmed |
+| Classroom Search feature description | Draft completed; awaiting review | 3 | 1 hour | Garret Godwin | Jada |
+| Dr. Phillip Journey persona | Draft completed; awaiting review | 3 | 30 minutes | Garret Godwin | Jada |
+| Assigned Classroom scenario | Draft completed; awaiting review | 3 | Not 30 minutes | Garret Godwin | Jada |
+| GP-1-1 Classroom Search user story | Draft completed; awaiting review | 3 | 30 minutes | Garret Godwin | Jada |
