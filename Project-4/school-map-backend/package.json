@@ -1,0 +1,19 @@
+{
+  "name": "school-map-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "python scripts/test-maps.py",
+    "import:map": "python scripts/import-measurements.py && python scripts/import-map.py",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1",
+    "sqlite3": "^6.0.1"
+  }
+}
+

@@ -1,0 +1,1906 @@
+{
+  "id": "bcb-level-1",
+  "building_name": "Billy C. Black Building",
+  "level": 1,
+  "units": "inches",
+  "reference_entrance": "Entrance beside room 116",
+  "coordinate_system": "Hallway-local distances; side indicators are not physical Y coordinates.",
+  "alignment_status": "pending_reconciliation",
+  "source_workbook": "UGR-Measurements.xlsx",
+  "map_image_url": "/api/maps/bcb-level-1/image",
+  "notes": [
+    "The entrance beside 116 is the user-confirmed reference; offsets from that entrance have not been reconciled.",
+    "Sheet1 and Sheet2 contain differing distances and labels; neither is treated as authoritative.",
+    "Hallway header distances represent lengths, not destination positions.",
+    "Lobby records have no confirmed shared origin or hallway assignment.",
+    "Repeated names and IDs are retained as source records, not deduplicated destinations.",
+    "Routing and building-wide map coordinates are not established."
+  ],
+  "pending_right_wing": [
+    {
+      "source_label": "187",
+      "room_number": null,
+      "verification_status": "awaiting_room_numbers"
+    },
+    {
+      "source_label": "189",
+      "room_number": null,
+      "verification_status": "awaiting_room_numbers"
+    },
+    {
+      "source_label": "185",
+      "room_number": null,
+      "verification_status": "awaiting_room_numbers"
+    },
+    {
+      "source_label": "Distance Learning Laboratory",
+      "room_number": null,
+      "verification_status": "awaiting_room_numbers"
+    },
+    {
+      "source_label": "191",
+      "room_number": null,
+      "verification_status": "awaiting_room_numbers"
+    },
+    {
+      "source_label": "193",
+      "room_number": null,
+      "verification_status": "awaiting_room_numbers"
+    },
+    {
+      "source_label": "Testing Center",
+      "room_number": null,
+      "verification_status": "awaiting_room_numbers"
+    },
+    {
+      "source_label": "Office 195",
+      "room_number": null,
+      "verification_status": "awaiting_room_numbers"
+    },
+    {
+      "source_label": "Office",
+      "room_number": null,
+      "verification_status": "awaiting_room_numbers"
+    },
+    {
+      "source_label": "The Graduate School",
+      "room_number": null,
+      "verification_status": "awaiting_room_numbers"
+    },
+    {
+      "source_label": "190",
+      "room_number": null,
+      "verification_status": "awaiting_room_numbers"
+    },
+    {
+      "source_label": "Student Lounge",
+      "room_number": null,
+      "verification_status": "awaiting_room_numbers"
+    },
+    {
+      "source_label": "184",
+      "room_number": null,
+      "verification_status": "awaiting_room_numbers"
+    },
+    {
+      "source_label": "Computer Laboratory",
+      "room_number": null,
+      "verification_status": "awaiting_room_numbers"
+    },
+    {
+      "source_label": "State Auditors",
+      "room_number": null,
+      "verification_status": "awaiting_room_numbers"
+    }
+  ],
+  "nodes": [
+    {
+      "source_node_id": 1,
+      "source_row": 2,
+      "name": "HW01",
+      "type": "HALLWAY",
+      "description": "137C to exit door by 138",
+      "hallway": "HW01",
+      "distance_inches": null,
+      "side_indicator": null,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 2,
+      "source_row": 3,
+      "name": "R137C",
+      "type": "ROOM",
+      "description": "no label; by end door",
+      "hallway": "HW01",
+      "distance_inches": 39.0,
+      "side_indicator": -1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 3,
+      "source_row": 4,
+      "name": "R150",
+      "type": "ROOM",
+      "description": "lecture room",
+      "hallway": "HW01",
+      "distance_inches": 505.0,
+      "side_indicator": -1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 4,
+      "source_row": 5,
+      "name": "S01",
+      "type": "STAIRS",
+      "description": "Steps in the middle",
+      "hallway": "HW01",
+      "distance_inches": 575.0,
+      "side_indicator": 0,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 5,
+      "source_row": 6,
+      "name": "R143",
+      "type": "ROOM",
+      "description": "Lecture room B",
+      "hallway": "HW01",
+      "distance_inches": 575.0,
+      "side_indicator": 1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 6,
+      "source_row": 7,
+      "name": "R141",
+      "type": "ROOM",
+      "description": "Lecture room A",
+      "hallway": "HW01",
+      "distance_inches": 850.0,
+      "side_indicator": 1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 7,
+      "source_row": 8,
+      "name": "G150E",
+      "type": "ROOM",
+      "description": "Auditorium stage entrance ",
+      "hallway": "HW01",
+      "distance_inches": 505.0,
+      "side_indicator": -1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 8,
+      "source_row": 9,
+      "name": "R139",
+      "type": "ROOM",
+      "description": "Computer lab",
+      "hallway": "HW01",
+      "distance_inches": 1067.0,
+      "side_indicator": 1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 9,
+      "source_row": 10,
+      "name": "R142A",
+      "type": "ROOM",
+      "description": "Computer lab",
+      "hallway": "HW01",
+      "distance_inches": 1186.0,
+      "side_indicator": -1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 10,
+      "source_row": 11,
+      "name": "HE01",
+      "type": "HALL ENTRANCE",
+      "description": "Entrance to 145-152",
+      "hallway": "HW01",
+      "distance_inches": 1333.0,
+      "side_indicator": -1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 11,
+      "source_row": 12,
+      "name": "HE02",
+      "type": "HALL ENTRANCE",
+      "description": "Entrance to 136-130",
+      "hallway": "HW01",
+      "distance_inches": 1608.0,
+      "side_indicator": 1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 12,
+      "source_row": 13,
+      "name": "R138",
+      "type": "ROOM",
+      "description": "Student Health Services",
+      "hallway": "HW01",
+      "distance_inches": 1678.0,
+      "side_indicator": -1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 13,
+      "source_row": 14,
+      "name": "EX01",
+      "type": "EXIT",
+      "description": "Exit doors at the end",
+      "hallway": "HW01",
+      "distance_inches": 1721.0,
+      "side_indicator": 0,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 14,
+      "source_row": 15,
+      "name": "HW02",
+      "type": "HALLWAY",
+      "description": "Staiway to exit door (103-114)",
+      "hallway": "HW02",
+      "distance_inches": 915.0,
+      "side_indicator": null,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 15,
+      "source_row": 16,
+      "name": "SW01",
+      "type": "STAIRWAY",
+      "description": "Stariway",
+      "hallway": "HW02",
+      "distance_inches": 61.0,
+      "side_indicator": 1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 16,
+      "source_row": 17,
+      "name": "EL01",
+      "type": "ELAVATOR",
+      "description": "Elavator at beginning of hallway",
+      "hallway": "HW02",
+      "distance_inches": 104.0,
+      "side_indicator": -1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 17,
+      "source_row": 18,
+      "name": "EC103",
+      "type": "ELECTRICAL",
+      "description": "Electrical Room",
+      "hallway": "HW02",
+      "distance_inches": 167.0,
+      "side_indicator": -1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 18,
+      "source_row": 19,
+      "name": "UN",
+      "type": "UNKNOWN",
+      "description": "Door with no label",
+      "hallway": "HW02",
+      "distance_inches": 252.0,
+      "side_indicator": -1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 19,
+      "source_row": 20,
+      "name": "EQ106",
+      "type": "EQUIPMENT",
+      "description": "Elavator equipment closet",
+      "hallway": "HW02",
+      "distance_inches": 368.0,
+      "side_indicator": 1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 20,
+      "source_row": 21,
+      "name": "RR109",
+      "type": "RESTROOM",
+      "description": "Women's restroom",
+      "hallway": "HW02",
+      "distance_inches": 422.0,
+      "side_indicator": -1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 21,
+      "source_row": 22,
+      "name": "O108",
+      "type": "OFFICE",
+      "description": "Dr Anta\u2019Sha Jones office",
+      "hallway": "HW02",
+      "distance_inches": 494.0,
+      "side_indicator": 1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 22,
+      "source_row": 23,
+      "name": "RR111",
+      "type": "RESTROOM",
+      "description": "Mens restroom",
+      "hallway": "HW02",
+      "distance_inches": 578.0,
+      "side_indicator": -1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 23,
+      "source_row": 24,
+      "name": "O110",
+      "type": "OFFICE",
+      "description": "Jerome S Myricks",
+      "hallway": "HW02",
+      "distance_inches": 552.0,
+      "side_indicator": 1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 24,
+      "source_row": 25,
+      "name": "HE03",
+      "type": "HALL ENTRANCE",
+      "description": "Hallway 3",
+      "hallway": "HW02",
+      "distance_inches": 679.0,
+      "side_indicator": -1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 25,
+      "source_row": 26,
+      "name": "O112",
+      "type": "OFFICE",
+      "description": "Lekeon Little",
+      "hallway": "HW02",
+      "distance_inches": 744.0,
+      "side_indicator": 1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 26,
+      "source_row": 27,
+      "name": "CR114",
+      "type": "CONFERENCE ROOM",
+      "description": "Conference room",
+      "hallway": "HW02",
+      "distance_inches": 802.0,
+      "side_indicator": 1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 27,
+      "source_row": 28,
+      "name": "EX02",
+      "type": "EXIT",
+      "description": "Exit doors at the end",
+      "hallway": "HW02",
+      "distance_inches": 915.0,
+      "side_indicator": 1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 28,
+      "source_row": 29,
+      "name": "HW03",
+      "type": "HALLWAY",
+      "description": "Hall 3 beginning to 130",
+      "hallway": "HW03",
+      "distance_inches": 1839.0,
+      "side_indicator": null,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 29,
+      "source_row": 30,
+      "name": "O116",
+      "type": "OFFICE",
+      "description": "Alex S. Alochukwu",
+      "hallway": "HW03",
+      "distance_inches": 88.0,
+      "side_indicator": 1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 30,
+      "source_row": 31,
+      "name": "O117",
+      "type": "OFFICE",
+      "description": "Laxmi P. Paudel",
+      "hallway": "HW03",
+      "distance_inches": 148.0,
+      "side_indicator": 1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 31,
+      "source_row": 32,
+      "name": "WL01",
+      "type": "WHEELCHAIR LIFT",
+      "description": null,
+      "hallway": "HW03",
+      "distance_inches": 274.0,
+      "side_indicator": null,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 32,
+      "source_row": 33,
+      "name": "O118",
+      "type": "OFFICE",
+      "description": "Keyanna Davis",
+      "hallway": "HW03",
+      "distance_inches": 346.0,
+      "side_indicator": 1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 33,
+      "source_row": 34,
+      "name": "O119",
+      "type": "OFFICE",
+      "description": "Vijay J. Kunwar",
+      "hallway": "HW03",
+      "distance_inches": 403.0,
+      "side_indicator": 1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 34,
+      "source_row": 35,
+      "name": "R143B",
+      "type": "ROOM",
+      "description": "Lecture room",
+      "hallway": "HW03",
+      "distance_inches": 562.0,
+      "side_indicator": -1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 35,
+      "source_row": 36,
+      "name": "O120",
+      "type": "OFFICE",
+      "description": "Dr Zephyrinus Okonkwo",
+      "hallway": "HW03",
+      "distance_inches": 605.0,
+      "side_indicator": 1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 36,
+      "source_row": 37,
+      "name": "O121",
+      "type": "OFFICE",
+      "description": "Li Feng",
+      "hallway": "HW03",
+      "distance_inches": 661.0,
+      "side_indicator": 1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 37,
+      "source_row": 38,
+      "name": "O122",
+      "type": "OFFICE",
+      "description": "Dr Seyed H Roosta",
+      "hallway": "HW03",
+      "distance_inches": 864.0,
+      "side_indicator": 1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 38,
+      "source_row": 39,
+      "name": "R141A",
+      "type": "ROOM",
+      "description": "Lecture room ",
+      "hallway": "HW03",
+      "distance_inches": 914.0,
+      "side_indicator": -1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 39,
+      "source_row": 40,
+      "name": "O124",
+      "type": "OFFICE",
+      "description": "Mr Anthony Cooper",
+      "hallway": "HW03",
+      "distance_inches": 945.0,
+      "side_indicator": 1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 40,
+      "source_row": 41,
+      "name": "O139",
+      "type": "OFFICE",
+      "description": "Records office",
+      "hallway": "HW03",
+      "distance_inches": 1119.0,
+      "side_indicator": 1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 41,
+      "source_row": 42,
+      "name": "O125",
+      "type": "OFFICE",
+      "description": "Dr Yong Jin Lee ",
+      "hallway": "HW03",
+      "distance_inches": 1158.0,
+      "side_indicator": 1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 42,
+      "source_row": 43,
+      "name": "O126",
+      "type": "OFFICE",
+      "description": "HBCU Project Manager office",
+      "hallway": "HW03",
+      "distance_inches": 1176.0,
+      "side_indicator": 1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 43,
+      "source_row": 44,
+      "name": "O127",
+      "type": "OFFICE",
+      "description": "Dr Liqiu Zheng Office",
+      "hallway": "HW03",
+      "distance_inches": 1374.0,
+      "side_indicator": 1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 44,
+      "source_row": 45,
+      "name": "O128",
+      "type": "OFFICE",
+      "description": "uknown office",
+      "hallway": "HW03",
+      "distance_inches": 1429.0,
+      "side_indicator": 1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 45,
+      "source_row": 46,
+      "name": "SW02",
+      "type": "STAIRWAY",
+      "description": "Stairway at the end",
+      "hallway": "HW03",
+      "distance_inches": 1565.0,
+      "side_indicator": 1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 46,
+      "source_row": 47,
+      "name": "HE04",
+      "type": "HALL ENTRANCE",
+      "description": "Entrance to halllway 4 (130-136)",
+      "hallway": "HW03",
+      "distance_inches": 1684.0,
+      "side_indicator": -1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 47,
+      "source_row": 48,
+      "name": "O130",
+      "type": "OFFICE",
+      "description": "Dep of Math and computer science and physics office",
+      "hallway": "HW03",
+      "distance_inches": 1700.0,
+      "side_indicator": 0,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 48,
+      "source_row": 49,
+      "name": "HW04",
+      "type": "HALLWAY",
+      "description": "Exit door by stairway to hallway 1",
+      "hallway": "HW04",
+      "distance_inches": 1796.0,
+      "side_indicator": null,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 49,
+      "source_row": 50,
+      "name": "EQ136",
+      "type": "EQUIPMENT",
+      "description": "Equipment closet",
+      "hallway": "HW04",
+      "distance_inches": 75.0,
+      "side_indicator": -1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 50,
+      "source_row": 51,
+      "name": "C134",
+      "type": "CUSTODIAN",
+      "description": "Custodian closet ",
+      "hallway": "HW04",
+      "distance_inches": 128.0,
+      "side_indicator": -1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 51,
+      "source_row": 52,
+      "name": "SR132B",
+      "type": "STAFF RESTROOM",
+      "description": "Staff only restroom",
+      "hallway": "HW04",
+      "distance_inches": 195.0,
+      "side_indicator": -1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 52,
+      "source_row": 53,
+      "name": "SR132A",
+      "type": "STAFF RESTROOM",
+      "description": "Staff only restroom",
+      "hallway": "HW04",
+      "distance_inches": 238.0,
+      "side_indicator": -1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 53,
+      "source_row": 54,
+      "name": "O135",
+      "type": "OFFICE",
+      "description": "Records office",
+      "hallway": "HW04",
+      "distance_inches": 247.0,
+      "side_indicator": 1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 54,
+      "source_row": 55,
+      "name": "R133",
+      "type": "ROOM",
+      "description": "Computer lab",
+      "hallway": "HW04",
+      "distance_inches": 331.0,
+      "side_indicator": 1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 55,
+      "source_row": 56,
+      "name": "SW03",
+      "type": "STAIRWAY",
+      "description": "Stairway by exit door",
+      "hallway": "HW04",
+      "distance_inches": 708.0,
+      "side_indicator": -1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 56,
+      "source_row": 57,
+      "name": "EX03",
+      "type": "EXIT",
+      "description": "Exit door by stairway",
+      "hallway": "HW04",
+      "distance_inches": 786.0,
+      "side_indicator": 0,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 57,
+      "source_row": 58,
+      "name": "HW05",
+      "type": "HALLWAY",
+      "description": "152-145",
+      "hallway": "HW05",
+      "distance_inches": 852.0,
+      "side_indicator": null,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 58,
+      "source_row": 59,
+      "name": "R142B",
+      "type": "ROOM",
+      "description": "Computer lab",
+      "hallway": "HW05",
+      "distance_inches": 301.0,
+      "side_indicator": -1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 59,
+      "source_row": 60,
+      "name": "R144",
+      "type": "ROOM",
+      "description": "conference room",
+      "hallway": "HW05",
+      "distance_inches": 362.0,
+      "side_indicator": -1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 60,
+      "source_row": 61,
+      "name": "R146",
+      "type": "ROOM",
+      "description": "Green room",
+      "hallway": "HW05",
+      "distance_inches": 511.0,
+      "side_indicator": -1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 61,
+      "source_row": 62,
+      "name": "HE05",
+      "type": "HALL ENTRANCE",
+      "description": "Entrance to hall 145-152",
+      "hallway": "HW05",
+      "distance_inches": 585.0,
+      "side_indicator": -1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 62,
+      "source_row": 63,
+      "name": "SW04",
+      "type": "STAIRWAY",
+      "description": "Stairway at the end",
+      "hallway": "HW05",
+      "distance_inches": 807.0,
+      "side_indicator": -1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 63,
+      "source_row": 64,
+      "name": "SF01",
+      "type": "STAFF ONLY",
+      "description": "Door at the end",
+      "hallway": "HW05",
+      "distance_inches": 852.0,
+      "side_indicator": 0,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 64,
+      "source_row": 65,
+      "name": "HW06",
+      "type": "HALLWAY",
+      "description": "145-152",
+      "hallway": "HW06",
+      "distance_inches": 635.0,
+      "side_indicator": null,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 65,
+      "source_row": 66,
+      "name": "EQ145",
+      "type": "EQUIPMENT",
+      "description": "Communication equipment ",
+      "hallway": "HW06",
+      "distance_inches": 24.0,
+      "side_indicator": 1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 66,
+      "source_row": 67,
+      "name": "R147",
+      "type": "ROOM",
+      "description": "Electrical Room ",
+      "hallway": "HW06",
+      "distance_inches": 91.0,
+      "side_indicator": 1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 67,
+      "source_row": 68,
+      "name": "R148",
+      "type": "ROOM",
+      "description": "Sound room",
+      "hallway": "HW06",
+      "distance_inches": 151.0,
+      "side_indicator": -1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 68,
+      "source_row": 69,
+      "name": "EQ151",
+      "type": "EQUIPMENT",
+      "description": "Service atrium",
+      "hallway": "HW06",
+      "distance_inches": 282.0,
+      "side_indicator": -1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 69,
+      "source_row": 70,
+      "name": "EX04",
+      "type": "EXIT",
+      "description": "Exit to the side across from closet",
+      "hallway": "HW06",
+      "distance_inches": 282.0,
+      "side_indicator": 1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 70,
+      "source_row": 71,
+      "name": "SG150e",
+      "type": "STAGE",
+      "description": "Stage entrance",
+      "hallway": "HW06",
+      "distance_inches": 346.0,
+      "side_indicator": -1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 71,
+      "source_row": 72,
+      "name": "S02",
+      "type": "STAIRS",
+      "description": "stairway down to 150 lecture room",
+      "hallway": "HW06",
+      "distance_inches": 492.0,
+      "side_indicator": -1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 72,
+      "source_row": 73,
+      "name": "R150",
+      "type": "ROOM",
+      "description": "Lecture room ",
+      "hallway": "HW06",
+      "distance_inches": 615.0,
+      "side_indicator": -1,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 73,
+      "source_row": 74,
+      "name": "EQ152",
+      "type": "EQUIPMENT",
+      "description": "Storage",
+      "hallway": "HW06",
+      "distance_inches": 635.0,
+      "side_indicator": 0,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 74,
+      "source_row": 75,
+      "name": "LOB01",
+      "type": "LOBBY",
+      "description": "Big area in center",
+      "hallway": null,
+      "distance_inches": null,
+      "side_indicator": null,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 75,
+      "source_row": 76,
+      "name": "DR01",
+      "type": "DOOR",
+      "description": "cs entry door",
+      "hallway": null,
+      "distance_inches": 1136.0,
+      "side_indicator": null,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 76,
+      "source_row": 77,
+      "name": "DR02",
+      "type": "DOOR",
+      "description": "auditorium door w hand sanitizer right",
+      "hallway": null,
+      "distance_inches": 559.0,
+      "side_indicator": null,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 77,
+      "source_row": 78,
+      "name": "RR177",
+      "type": "RESTROOM",
+      "description": "Womens bathroom",
+      "hallway": null,
+      "distance_inches": 580.0,
+      "side_indicator": null,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 78,
+      "source_row": 79,
+      "name": "RR175",
+      "type": "RESTROOM",
+      "description": "Mens bathroom",
+      "hallway": null,
+      "distance_inches": 684.0,
+      "side_indicator": null,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 79,
+      "source_row": 80,
+      "name": "DR03",
+      "type": "DOOR",
+      "description": "auditorium door w hand sanitizer on right",
+      "hallway": null,
+      "distance_inches": 571.0,
+      "side_indicator": null,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 80,
+      "source_row": 81,
+      "name": "DR04",
+      "type": "DOOR",
+      "description": "auditorium door w emergency shelter to right",
+      "hallway": null,
+      "distance_inches": 875.0,
+      "side_indicator": null,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 81,
+      "source_row": 82,
+      "name": "EN01",
+      "type": "ENTRANCE",
+      "description": "rebuilt entrance",
+      "hallway": null,
+      "distance_inches": 497.0,
+      "side_indicator": null,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 82,
+      "source_row": 83,
+      "name": "RR177",
+      "type": "RESTROOM",
+      "description": "Womens bathroom",
+      "hallway": null,
+      "distance_inches": 1327.0,
+      "side_indicator": null,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 83,
+      "source_row": 84,
+      "name": "RR175",
+      "type": "RESTROOM",
+      "description": "Mens bathroom",
+      "hallway": null,
+      "distance_inches": 1428.0,
+      "side_indicator": null,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 84,
+      "source_row": 85,
+      "name": "EM01",
+      "type": "EMERGENCY",
+      "description": "Emergency shelter",
+      "hallway": null,
+      "distance_inches": 496.0,
+      "side_indicator": null,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 85,
+      "source_row": 86,
+      "name": "EL02",
+      "type": "ELEVATOR",
+      "description": "elevator next to 103",
+      "hallway": null,
+      "distance_inches": 553.0,
+      "side_indicator": null,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 86,
+      "source_row": 87,
+      "name": "EL03",
+      "type": "ELEVATOR",
+      "description": "elevator next to 1013",
+      "hallway": null,
+      "distance_inches": 1096.0,
+      "side_indicator": null,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 87,
+      "source_row": 88,
+      "name": "RR177",
+      "type": "RESTROOM",
+      "description": "Womens bathroom",
+      "hallway": null,
+      "distance_inches": 1327.0,
+      "side_indicator": null,
+      "verification_status": "needs_reconciliation"
+    },
+    {
+      "source_node_id": 88,
+      "source_row": 89,
+      "name": "RR175",
+      "type": "RESTROOM",
+      "description": "Mens bathroom",
+      "hallway": null,
+      "distance_inches": 1428.0,
+      "side_indicator": null,
+      "verification_status": "needs_reconciliation"
+    }
+  ],
+  "raw_measurements": [
+    {
+      "row": 1,
+      "cells": {
+        "A": "Hallway 1",
+        "F": "1721",
+        "J": "Lobby Area"
+      }
+    },
+    {
+      "row": 2,
+      "cells": {
+        "A": "Exit Door",
+        "B": "START",
+        "D": "End Door",
+        "E": "START",
+        "J": "From lobby door (do not enter- facing police dept) to ",
+        "O": "1000s Area",
+        "S": "Halllway 2",
+        "V": "Hallway 3"
+      }
+    },
+    {
+      "row": 3,
+      "cells": {
+        "A": "138",
+        "B": "43",
+        "D": "137 C",
+        "E": "39",
+        "J": "cs entry door",
+        "K": "1136",
+        "O": "Left Hallway",
+        "S": "Beginning",
+        "T": "START",
+        "V": "116",
+        "W": "88"
+      }
+    },
+    {
+      "row": 4,
+      "cells": {
+        "A": "HD (left)",
+        "B": "113",
+        "D": "150",
+        "E": "505",
+        "J": "auditorium door w hand sanitizer right",
+        "K": "559",
+        "O": "Elavator ",
+        "P": "START",
+        "S": "Stairway",
+        "T": "61",
+        "V": "117",
+        "W": "148"
+      }
+    },
+    {
+      "row": 5,
+      "cells": {
+        "A": "HD (right)",
+        "B": "388",
+        "D": "Stairs",
+        "E": "575",
+        "J": "W bathroom rm 177",
+        "K": "580",
+        "O": "1018",
+        "P": "217",
+        "S": "Elavator ",
+        "T": "104",
+        "V": "Wheel Chair Lift",
+        "W": "274"
+      }
+    },
+    {
+      "row": 6,
+      "cells": {
+        "A": "142",
+        "B": "535",
+        "D": "143",
+        "E": "575",
+        "J": "M bathroom rm 175",
+        "K": "684",
+        "O": "1023",
+        "P": "530",
+        "S": "Electrical 103",
+        "T": "167",
+        "V": "118",
+        "W": "346"
+      }
+    },
+    {
+      "row": 7,
+      "cells": {
+        "A": "139",
+        "B": "654",
+        "D": "141",
+        "E": "850",
+        "J": "auditorium door w hand sanitizer on right",
+        "K": "571",
+        "O": "1019",
+        "P": "654",
+        "S": "UNK",
+        "T": "252",
+        "V": "119",
+        "W": "403"
+      }
+    },
+    {
+      "row": 8,
+      "cells": {
+        "A": "150e",
+        "B": "840",
+        "D": "150e",
+        "E": "881",
+        "J": "auditorium door w emergency shelter to right",
+        "K": "875",
+        "O": "1020",
+        "P": "740",
+        "S": "EQ106",
+        "T": "368",
+        "V": "143b",
+        "W": "562"
+      }
+    },
+    {
+      "row": 9,
+      "cells": {
+        "A": "141a",
+        "B": "871",
+        "D": "139",
+        "E": "1067",
+        "J": "rebuilt entrance",
+        "K": "497",
+        "O": "1023 (backside)",
+        "P": "1019",
+        "S": "RR109",
+        "T": "422",
+        "V": "120",
+        "W": "605"
+      }
+    },
+    {
+      "row": 10,
+      "cells": {
+        "A": "143",
+        "B": "1146",
+        "D": "142",
+        "E": "1186",
+        "J": "W bathroom rm 177",
+        "K": "1327",
+        "O": "1022",
+        "P": "1120",
+        "S": "O108",
+        "T": "494",
+        "V": "121",
+        "W": "661"
+      }
+    },
+    {
+      "row": 11,
+      "cells": {
+        "A": "Stairs",
+        "B": "1146",
+        "D": "HD (left)",
+        "E": "1333",
+        "J": "M bathroom rm 175",
+        "K": "1428",
+        "O": "1309",
+        "P": "1309",
+        "S": "RR111",
+        "T": "578",
+        "V": "122",
+        "W": "864"
+      }
+    },
+    {
+      "row": 12,
+      "cells": {
+        "A": "150",
+        "B": "1216",
+        "D": "HD (right)",
+        "E": "1608",
+        "O": "ELV to Stairs",
+        "P": "1456",
+        "S": "O110",
+        "T": "552",
+        "V": "123",
+        "W": "914"
+      }
+    },
+    {
+      "row": 13,
+      "cells": {
+        "A": "137 C",
+        "B": "1682",
+        "D": "138",
+        "E": "1678",
+        "J": "From lobby door (do not enter facing hyper to BCB auditorium door to",
+        "O": "Stairs to ELV",
+        "P": "2410",
+        "S": "HE03",
+        "T": "679",
+        "V": "141 A",
+        "W": "945"
+      }
+    },
+    {
+      "row": 14,
+      "cells": {
+        "A": "End Door",
+        "B": "1721",
+        "D": "Exit Door",
+        "E": "1721",
+        "J": "emergency shelter",
+        "K": "496",
+        "S": "O112",
+        "T": "744",
+        "V": "124",
+        "W": "1119"
+      }
+    },
+    {
+      "row": 15,
+      "cells": {
+        "J": "hand sanitizer right",
+        "K": "781",
+        "O": "Right Hallway",
+        "S": "CR114",
+        "T": "802",
+        "V": "139",
+        "W": "1158"
+      }
+    },
+    {
+      "row": 16,
+      "cells": {
+        "A": "Hallway 2",
+        "F": "801",
+        "J": "elevator next to 103",
+        "K": "553",
+        "O": "Elavator ",
+        "P": "START",
+        "S": "EX02",
+        "T": "915",
+        "V": "125",
+        "W": "1176"
+      }
+    },
+    {
+      "row": 17,
+      "cells": {
+        "A": "Exit Door",
+        "B": "START",
+        "D": "Stairs ",
+        "E": "START",
+        "J": "elevator next to 1013",
+        "K": "1096",
+        "O": "M BATH",
+        "P": "183",
+        "V": "126",
+        "W": "1374"
+      }
+    },
+    {
+      "row": 18,
+      "cells": {
+        "A": "114",
+        "B": "73",
+        "D": "elevator",
+        "E": "45",
+        "J": "W bathroom rm 177",
+        "K": "1327",
+        "O": "W BATH",
+        "P": "428",
+        "V": "127",
+        "W": "1429"
+      }
+    },
+    {
+      "row": 19,
+      "cells": {
+        "A": "112",
+        "B": "124",
+        "D": "103",
+        "E": "105",
+        "J": "M bathroom rm 175",
+        "K": "1428",
+        "O": "1008",
+        "P": "577",
+        "V": "128",
+        "W": "1565"
+      }
+    },
+    {
+      "row": 20,
+      "cells": {
+        "A": "Hallway",
+        "B": "158",
+        "D": "no #",
+        "E": "194",
+        "O": "1003",
+        "P": "615",
+        "V": "Hallway",
+        "W": "1684"
+      }
+    },
+    {
+      "row": 21,
+      "cells": {
+        "A": "110",
+        "B": "314",
+        "D": "106",
+        "E": "308",
+        "O": "1007",
+        "P": "798",
+        "V": "Stairway",
+        "W": "1700"
+      }
+    },
+    {
+      "row": 22,
+      "cells": {
+        "A": "111",
+        "B": "325",
+        "D": "109",
+        "E": "321",
+        "O": "1004",
+        "P": "873",
+        "V": "130",
+        "W": "1796"
+      }
+    },
+    {
+      "row": 23,
+      "cells": {
+        "A": "108",
+        "B": "369",
+        "D": "108",
+        "E": "432",
+        "O": "1006",
+        "P": "989"
+      }
+    },
+    {
+      "row": 24,
+      "cells": {
+        "A": "109",
+        "B": "480",
+        "D": "111",
+        "E": "476",
+        "O": "1005",
+        "P": "989"
+      }
+    },
+    {
+      "row": 25,
+      "cells": {
+        "A": "106",
+        "B": "493",
+        "D": "110",
+        "E": "487",
+        "O": "Elv to stairs",
+        "P": "1025"
+      }
+    },
+    {
+      "row": 26,
+      "cells": {
+        "A": "no #",
+        "B": "607",
+        "D": "Hallway",
+        "E": "643",
+        "O": "Stairs to Elv",
+        "P": "2104"
+      }
+    },
+    {
+      "row": 27,
+      "cells": {
+        "A": "103",
+        "B": "696",
+        "D": "112",
+        "E": "677"
+      }
+    },
+    {
+      "row": 28,
+      "cells": {
+        "A": "elevator",
+        "B": "756",
+        "D": "114",
+        "E": "728"
+      }
+    },
+    {
+      "row": 29,
+      "cells": {
+        "A": "stairs",
+        "B": "801",
+        "D": "Exit Door",
+        "E": "801"
+      }
+    },
+    {
+      "row": 31,
+      "cells": {
+        "A": "Hallway 3",
+        "F": "1839"
+      }
+    },
+    {
+      "row": 32,
+      "cells": {
+        "A": "112",
+        "B": "START",
+        "D": "130",
+        "E": "START"
+      }
+    },
+    {
+      "row": 33,
+      "cells": {
+        "A": "116",
+        "B": "156",
+        "D": "hallway",
+        "E": "393"
+      }
+    },
+    {
+      "row": 34,
+      "cells": {
+        "A": "117",
+        "B": "208",
+        "D": "stairway",
+        "E": "95"
+      }
+    },
+    {
+      "row": 35,
+      "cells": {
+        "A": "118",
+        "B": "411",
+        "D": "128",
+        "E": "227"
+      }
+    },
+    {
+      "row": 36,
+      "cells": {
+        "A": "119",
+        "B": "465",
+        "D": "127",
+        "E": "358"
+      }
+    },
+    {
+      "row": 37,
+      "cells": {
+        "A": "143 b",
+        "B": "622",
+        "D": "126",
+        "E": "513"
+      }
+    },
+    {
+      "row": 38,
+      "cells": {
+        "A": "120",
+        "B": "662",
+        "D": "125",
+        "E": "609"
+      }
+    },
+    {
+      "row": 39,
+      "cells": {
+        "A": "121",
+        "B": "719",
+        "D": "139",
+        "E": "621"
+      }
+    },
+    {
+      "row": 40,
+      "cells": {
+        "A": "122",
+        "B": "920",
+        "D": "124",
+        "E": "663"
+      }
+    },
+    {
+      "row": 41,
+      "cells": {
+        "A": "141 a",
+        "B": "1002",
+        "D": "141a",
+        "E": "837"
+      }
+    },
+    {
+      "row": 42,
+      "cells": {
+        "A": "124",
+        "B": "1176",
+        "D": "122",
+        "E": "919"
+      }
+    },
+    {
+      "row": 43,
+      "cells": {
+        "A": "139",
+        "B": "1218",
+        "D": "121",
+        "E": "1120"
+      }
+    },
+    {
+      "row": 44,
+      "cells": {
+        "A": "125",
+        "B": "1230",
+        "D": "120",
+        "E": "1177"
+      }
+    },
+    {
+      "row": 45,
+      "cells": {
+        "A": "126",
+        "B": "1326",
+        "D": "143 b",
+        "E": "1217"
+      }
+    },
+    {
+      "row": 46,
+      "cells": {
+        "A": "127",
+        "B": "1481",
+        "D": "119",
+        "E": "1374"
+      }
+    },
+    {
+      "row": 47,
+      "cells": {
+        "A": "128",
+        "B": "1612",
+        "D": "118",
+        "E": "1428"
+      }
+    },
+    {
+      "row": 48,
+      "cells": {
+        "A": "stairway",
+        "B": "1744",
+        "D": "117",
+        "E": "1631"
+      }
+    },
+    {
+      "row": 49,
+      "cells": {
+        "A": "hallway",
+        "B": "1446",
+        "D": "116",
+        "E": "1683"
+      }
+    },
+    {
+      "row": 50,
+      "cells": {
+        "A": "130",
+        "B": "1839",
+        "D": "112",
+        "E": "1839"
+      }
+    },
+    {
+      "row": 52,
+      "cells": {
+        "A": "Hallway 4"
+      }
+    },
+    {
+      "row": 53,
+      "cells": {
+        "A": "Exit Door",
+        "B": "START",
+        "D": "Hallway",
+        "E": "START",
+        "F": "786"
+      }
+    },
+    {
+      "row": 54,
+      "cells": {
+        "A": "Stairs",
+        "B": "78",
+        "D": "136",
+        "E": "75"
+      }
+    },
+    {
+      "row": 55,
+      "cells": {
+        "A": "130",
+        "B": "160",
+        "D": "134",
+        "E": "128"
+      }
+    },
+    {
+      "row": 56,
+      "cells": {
+        "A": "133",
+        "B": "455",
+        "D": "132 B",
+        "E": "195"
+      }
+    },
+    {
+      "row": 57,
+      "cells": {
+        "D": "O135",
+        "E": "247"
+      }
+    },
+    {
+      "row": 58,
+      "cells": {
+        "A": "132 A",
+        "B": "548",
+        "D": "132 A",
+        "E": "238"
+      }
+    },
+    {
+      "row": 59,
+      "cells": {
+        "A": "132 B",
+        "B": "591",
+        "D": "133",
+        "E": "331"
+      }
+    },
+    {
+      "row": 60,
+      "cells": {
+        "A": "134",
+        "B": "658",
+        "D": "130",
+        "E": "626"
+      }
+    },
+    {
+      "row": 61,
+      "cells": {
+        "A": "136",
+        "B": "711",
+        "D": "Stairs ",
+        "E": "708"
+      }
+    },
+    {
+      "row": 62,
+      "cells": {
+        "A": "hallway",
+        "B": "786",
+        "D": "Exit door",
+        "E": "786"
+      }
+    },
+    {
+      "row": 64,
+      "cells": {
+        "A": "Hallway 5",
+        "F": "852"
+      }
+    },
+    {
+      "row": 65,
+      "cells": {
+        "A": "Doors ",
+        "B": "START",
+        "D": "End Room",
+        "E": "START"
+      }
+    },
+    {
+      "row": 66,
+      "cells": {
+        "A": "142",
+        "B": "301",
+        "D": "stairway",
+        "E": "45"
+      }
+    },
+    {
+      "row": 67,
+      "cells": {
+        "A": "144",
+        "B": "362",
+        "D": "hallway",
+        "E": "267"
+      }
+    },
+    {
+      "row": 68,
+      "cells": {
+        "A": "146",
+        "B": "511",
+        "D": "146",
+        "E": "341"
+      }
+    },
+    {
+      "row": 69,
+      "cells": {
+        "A": "hallway",
+        "B": "585",
+        "D": "144",
+        "E": "490"
+      }
+    },
+    {
+      "row": 70,
+      "cells": {
+        "A": "stairway",
+        "B": "807",
+        "D": "142",
+        "E": "551"
+      }
+    },
+    {
+      "row": 71,
+      "cells": {
+        "A": "End Room",
+        "B": "852",
+        "D": "Doors ",
+        "E": "852"
+      }
+    },
+    {
+      "row": 73,
+      "cells": {
+        "A": "Hallway 6",
+        "F": "635"
+      }
+    },
+    {
+      "row": 74,
+      "cells": {
+        "B": "START"
+      }
+    },
+    {
+      "row": 75,
+      "cells": {
+        "A": "145",
+        "B": "24",
+        "D": "152",
+        "E": "START"
+      }
+    },
+    {
+      "row": 76,
+      "cells": {
+        "A": "147",
+        "B": "91",
+        "D": "150",
+        "E": "20"
+      }
+    },
+    {
+      "row": 77,
+      "cells": {
+        "A": "148",
+        "B": "151",
+        "D": "Stairs ",
+        "E": "143"
+      }
+    },
+    {
+      "row": 78,
+      "cells": {
+        "A": "151",
+        "B": "282",
+        "D": "150e",
+        "E": "289"
+      }
+    },
+    {
+      "row": 79,
+      "cells": {
+        "A": "Exit Door",
+        "B": "282",
+        "D": "Exit Door",
+        "E": "353"
+      }
+    },
+    {
+      "row": 80,
+      "cells": {
+        "A": "150e",
+        "B": "346",
+        "D": "151",
+        "E": "353"
+      }
+    },
+    {
+      "row": 81,
+      "cells": {
+        "A": "stairs",
+        "B": "492",
+        "D": "148",
+        "E": "484"
+      }
+    },
+    {
+      "row": 82,
+      "cells": {
+        "A": "150",
+        "B": "615",
+        "D": "147",
+        "E": "544"
+      }
+    },
+    {
+      "row": 83,
+      "cells": {
+        "A": "152",
+        "B": "635",
+        "D": "145",
+        "E": "611"
+      }
+    }
+  ]
+}
