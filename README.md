@@ -27,3 +27,9 @@ During our meeting, we discussed what information the Campus Navigator would nee
 We also discussed how the back end will need to provide the information that is displayed by the front end. This will require us to determine how the campus location data will be organized as we begin developing the application.
 
 As the Back-End Developer, I will focus on the application logic and the organization and management of the data needed by the Campus Navigator. I will also work with the front-end developer to make sure the correct information can be retrieved and displayed to the user.
+
+## Course projects
+
+- [Project 2](Project-2/README.md)
+- [Project 3](Project-3/)
+- [Project 4 — Architecture and meeting records](Project-4/README.md)

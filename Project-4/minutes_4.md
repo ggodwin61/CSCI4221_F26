@@ -29,6 +29,6 @@ The group met to discuss progress on Project 4, the measured campus map database
 
 ## Product Backlog
 
-| PBI | Status | Sprint | Assigned |
-| --- | --- | --- | --- |
-| Integrate measured BCB first-floor map data with the campus-map backend | Backend schema, import workflow, map API, documentation, and test checks implemented; data verification and local runtime testing remain | 4 — Project 4 | Garret Godwin |
+| PBI | Status | Sprint | Estimate | Assigned | Reviewer |
+| --- | --- | --- | --- | --- | --- |
+| Integrate measured BCB first-floor map data with the campus-map backend | Backend schema, import workflow, map API, documentation, and test checks implemented; data verification and local runtime testing remain | 4 — Project 4 | Not recorded | Garret Godwin | Jada |
