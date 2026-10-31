@@ -17,4 +17,3 @@ The assignment requires three Project 4 meetings. Two meetings have been documen
 
 Confirm proposed component assignments, estimates, and reviewers in the architecture and minutes. The cloud container deployment is a proposal; the existing implementation is described separately.
 
-The course group repository is <https://github.com/CSCI4221ASU/Fall26_G1>. Submit the link to your personal GitHub repository in GeorgiaView after committing and pushing the completed work. These local updates have not been pushed to GitHub.
