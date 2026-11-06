@@ -53,6 +53,20 @@ with sqlite3.connect(args.database) as db:
             db.execute('INSERT OR IGNORE INTO map_pending_locations VALUES (?, ?, ?, ?)',
                        (data['id'], pending['source_label'], pending['room_number'],
                         pending['verification_status']))
+        directory = json.loads((ROOT / 'data/bcb-level-1-destinations.json').read_text())
+        if directory['map_id'] != data['id']:
+            raise ValueError('Destination directory map does not match measurement map')
+        for destination in directory['destinations']:
+            db.execute('''INSERT INTO map_destinations
+                (map_id, id, name, room_number, type, description, verification_status)
+                VALUES (?, ?, ?, ?, ?, ?, ?)
+                ON CONFLICT(map_id, id) DO UPDATE SET name=excluded.name,
+                room_number=excluded.room_number, type=excluded.type,
+                description=excluded.description,
+                verification_status=excluded.verification_status''',
+                (data['id'], destination['id'], destination['name'],
+                 destination['room_number'], destination['type'],
+                 destination['description'], destination['verification_status']))
         errors = db.execute('PRAGMA foreign_key_check').fetchall()
         if errors:
             raise ValueError(f'Foreign key errors: {errors}')
