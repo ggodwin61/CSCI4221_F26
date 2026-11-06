@@ -8,7 +8,7 @@ Garret Godwin
 **ScrumMaster:** Course instructor  
 **Sprint:** 4 — Architecture
 
-Backend file paths in this document are relative to [`../Project-4/school-map-backend/`](../Project-4/school-map-backend/). The implementation stays in its existing folder; this `Project4` folder contains the assignment submission.
+Backend file paths in this document are relative to [`school-map-backend/`](school-map-backend/). This `Project4` folder contains the architecture submission and its backend implementation.
 
 **Documentation updated:** November 6, 2026.
 

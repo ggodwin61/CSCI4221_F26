@@ -2,7 +2,7 @@ Garret Godwin
 
 # Project 4 — Next Meeting Template: Architecture review and submission
 
-**Status:** Draft agenda and minutes template — actual meeting has not been documented.  
+**Status:** Unused template — the third meeting was not held.  
 **Group:** 1  
 **Sprint:** 4 — Architecture  
 **Date/time:** [Enter actual date and time]  

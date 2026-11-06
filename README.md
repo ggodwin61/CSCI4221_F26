@@ -42,7 +42,7 @@ The backend can also be run from the repository root. Its setup and API notes fo
 
 **Garret Godwin · Group 1**
 
-The architecture assignment, meeting records, and backend repository copy are consolidated in [Project-4](CSCI4221_F26/Project4/README.md). See the [architecture document](CSCI4221_F26/Project4/architecture.md) for the three required sections.
+The architecture assignment, meeting records, and backend repository copy are consolidated in [Project4](Project4/README.md). See the [architecture document](Project4/architecture.md) for the three required sections.
 
 # Campus Map Backend
 

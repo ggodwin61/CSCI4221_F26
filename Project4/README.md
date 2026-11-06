@@ -47,7 +47,7 @@ This submission is in [Garret's personal repository](https://github.com/ggodwin6
 The repository's origin points to the personal repository; its provenance as a
 clone of the instructor's combined repository has not been verified.
 
-The current backend remains at [Project-4/school-map-backend](../Project-4/school-map-backend/README.md).
+The backend is at [Project4/school-map-backend](school-map-backend/README.md).
 It includes the corrected classroom map, room directory, student area, search
 API, imports, and tests. The server status page is not a visual map application.
 
