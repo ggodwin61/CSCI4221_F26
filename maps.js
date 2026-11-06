@@ -33,12 +33,40 @@ module.exports = function registerMaps(app, db) {
             FROM map_pending_locations WHERE map_id = ? ORDER BY rowid`, [map.id]);
         const hallways = await all(`SELECT id FROM map_hallways WHERE map_id = ?
             ORDER BY id`, [map.id]);
+        const destinations = await all(`SELECT id, name, room_number, type, description,
+            verification_status FROM map_destinations WHERE map_id = ? ORDER BY id`, [map.id]);
         const { notes_json, image_filename, ...metadata } = map;
         res.json({ ...metadata, notes: JSON.parse(notes_json),
             map_image_url: `/api/maps/${encodeURIComponent(map.id)}/image`,
-            hallways, nodes, pending_right_wing: pending,
+            hallways, nodes, destinations, routing_available: false, pending_right_wing: pending,
             raw_measurements: raw.map(row => ({ row: row.source_row,
                 cells: JSON.parse(row.cells_json) })) });
+    }));
+
+    // Confirmed image labels are separate from unreconciled workbook observations.
+    app.get('/api/maps/:mapId/locations', handle(async (req, res) => {
+        const map = await get('SELECT id FROM maps WHERE id = ?', [req.params.mapId]);
+        if (!map) return res.status(404).json({ error: 'Map not found' });
+        const q = req.query?.q;
+        if (q !== undefined && (typeof q !== 'string' || !q.trim() || q.length > 200)) {
+            return res.status(400).json({ error: 'q must be a nonempty string of at most 200 characters' });
+        }
+        const rows = await all(`SELECT id, name, room_number, type, description,
+            verification_status FROM map_destinations WHERE map_id = ?
+            ORDER BY room_number IS NULL, CAST(room_number AS INTEGER), name`, [map.id]);
+        const term = q?.trim().toLowerCase();
+        res.json(term ? rows.filter(row => [row.name, row.room_number, row.type, row.description]
+            .some(value => value?.toLowerCase().includes(term))) : rows);
+    }));
+
+    app.get('/api/maps/:mapId/locations/:locationId', handle(async (req, res) => {
+        const map = await get('SELECT id FROM maps WHERE id = ?', [req.params.mapId]);
+        if (!map) return res.status(404).json({ error: 'Map not found' });
+        const location = await get(`SELECT id, name, room_number, type, description,
+            verification_status FROM map_destinations WHERE map_id = ? AND id = ?`,
+            [map.id, req.params.locationId]);
+        if (!location) return res.status(404).json({ error: 'Location not found' });
+        res.json(location);
     }));
 
     app.get('/api/maps/:mapId/image', handle(async (req, res) => {

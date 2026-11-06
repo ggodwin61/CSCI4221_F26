@@ -56,7 +56,7 @@ npm start
 
 Open `http://localhost:3000/` to see the server status message. The local package defines `npm start` to run `server.js`.
 
-Run from this directory because `database.js` opens `./campus.db` relative to the current working directory. The repository database contains prototype data and should be copied before trying write requests if you want to preserve the supplied sample.
+The database defaults to `campus.db` beside `database.js`; set `DATABASE_PATH` to use another database. The repository database contains prototype data and should be copied before trying write requests if you want to preserve the supplied sample.
 
 Dependencies are installed for the current machine rather than copied from DragonOS.
 `node_modules` is excluded from Git. Run `npm test` for isolated database import
@@ -82,4 +82,24 @@ available at `/api/maps/bcb-level-1/image`.
 
 The JavaScript files and package manifests were restored from `ggodwin61/CSCI4221_F26`, `Project-2/school-map-backend`. A start script was added. The original binary `campus.db` could not be downloaded through the available connector. The local database now contains the measured floor map; original sample building records have not been restored. Starting the server creates the schema; run `npm run import:map` to populate map data in a new database.
 
-Dependency installation was blocked by DNS access to registry.npmjs.org. Run `npm ci` with internet access, then `npm start`.
+Install dependencies with `npm ci`, then run `npm start`.
+
+## Updated map directory
+
+The updated `school.jpeg` is served as `data/bcb-level-1.jpeg`.
+`data/bcb-level-1-destinations.json` records visible room labels and the student
+area. Rooms 1021 and 1024 correct numbers only; the layout is unchanged. The red
+shaded area below 1024 is the student area. This directory is separate from the
+old workbook observations and historical pending labels, which remain available
+for reconciliation. It is a directory of visible labels, not a complete inventory.
+
+- `GET /api/maps/bcb-level-1/locations` lists the updated directory.
+- `GET /api/maps/bcb-level-1/locations?q=1021` searches names, numbers, types, and descriptions.
+- `GET /api/maps/bcb-level-1/locations/room-1024` returns a room.
+- `GET /api/maps/bcb-level-1/locations/student-area` returns the student area.
+
+Map details include `destinations` and `routing_available: false`. Confirmed
+hallway connections and reconciled measurements are still required for routing.
+Run `npm run import:map` after editing the source files; imports update directory
+records by stable ID without creating duplicates. Records omitted from later
+imports are retained for manual reconciliation.

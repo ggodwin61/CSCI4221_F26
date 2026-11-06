@@ -43,3 +43,15 @@ CREATE TABLE IF NOT EXISTS map_pending_locations (
     verification_status TEXT NOT NULL,
     PRIMARY KEY (map_id, source_label)
 );
+
+CREATE TABLE IF NOT EXISTS map_destinations (
+    map_id TEXT NOT NULL REFERENCES maps(id) ON DELETE CASCADE,
+    id TEXT NOT NULL,
+    name TEXT NOT NULL,
+    room_number TEXT,
+    type TEXT NOT NULL,
+    description TEXT,
+    verification_status TEXT NOT NULL,
+    PRIMARY KEY (map_id, id)
+);
+CREATE INDEX IF NOT EXISTS map_destinations_room ON map_destinations(map_id, room_number);
