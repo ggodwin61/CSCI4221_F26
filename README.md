@@ -32,4 +32,4 @@ As the Back-End Developer, I will focus on the application logic and the organiz
 
 - [Project 2](Project-2/README.md)
 - [Project 3](Project-3/)
-- [Project 4 — Architecture and meeting records](Project-4/README.md)
+- [Project 4 — Architecture and meeting records](Project4/README.md)
