@@ -33,10 +33,11 @@ As the Back-End Developer, I will focus on the application logic and the organiz
 - [Project 2](Project-2/README.md)
 - [Project 3](Project-3/)
 - [Project 4 — Architecture and meeting records](Project4/README.md)
+- [Project 5 — Native Campus Navigator app and AI prompt](Project5/README.md)
 
-## Local backend workspace
+## React app and API
 
-The backend can also be run from the repository root. Its setup and API notes follow.
+Run Campus Navigator from the repository root. The app uses the Express API and the existing SQLite directory.
 
 # Project 4: Architecture — Campus Map App
 
@@ -94,7 +95,9 @@ npm ci
 npm start
 ```
 
-Open `http://localhost:3000/` to see the server status message. The local package defines `npm start` to run `server.js`.
+Open [Campus Navigator](http://localhost:3000/) and search for a room number, building name, or abbreviation such as `BCB 1024`. Select a result to see its building and level and highlight it on the available map. The BCB map is an illustration. Rooms without a marker still show their building and floor.
+
+`npm start` builds the React assets and starts Express on the same port. Run `npm run build` again after changing client files when the server is already running.
 
 The database defaults to `campus.db` beside `database.js`; set `DATABASE_PATH` to use another database. The repository database contains prototype data and should be copied before trying write requests if you want to preserve the supplied sample.
 
@@ -143,3 +146,23 @@ hallway connections and reconciled measurements are still required for routing.
 Run `npm run import:map` after editing the source files; imports update directory
 records by stable ID without creating duplicates. Records omitted from later
 imports are retained for manual reconciliation.
+
+## Native iPhone and Android app
+
+The Expo app lives in `mobile/` and requires Node.js 22.13+ (22.x) or 24.3+ (24.x). It bundles the Billy C. Black Building directory
+and the corrected illustrated floor plan. Room search and the map work offline
+with an installed build, and the phone stores saved rooms and appearance locally.
+The native app currently covers BCB Floor 1 and uses the repository’s bundled
+directory rather than a live server connection.
+
+```sh
+cd mobile
+npm ci
+npm start
+```
+
+Open the QR code with an Expo Go installation compatible with SDK 58. Keep the
+phone and development computer on the same network. Use `npm run android` or
+`npm run ios` for an available emulator or simulator. The iOS Simulator requires
+macOS and Xcode. To check both native JavaScript bundles, run `npm run export`
+from `mobile/`.

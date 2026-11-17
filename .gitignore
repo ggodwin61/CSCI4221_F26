@@ -8,3 +8,4 @@ campus.db-wal
 campus.db-shm
 .DS_Store
 
+/client/dist/

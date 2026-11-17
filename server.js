@@ -1,3 +1,4 @@
+const path = require('node:path');
 const express = require('express');
 const db = require('./database');
 const registerMaps = require('./maps');
@@ -9,8 +10,9 @@ app.use(express.json());
 
 registerMaps(app, db);
 
+app.use('/assets', express.static(path.join(__dirname, 'client', 'dist')));
 app.get('/', (req, res) => {
-	res.send('School Map Backend is running!');
+	res.sendFile(path.join(__dirname, 'client', 'index.html'));
 });
 
 app.get('/api/buildings', (req, res) => {

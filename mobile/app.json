@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "Campus Navigator",
+    "slug": "campus-navigator",
+    "version": "1.0.0",
+    "platforms": ["ios", "android"],
+    "userInterfaceStyle": "light",
+    "ios": {
+      "bundleIdentifier": "edu.albanystate.campusnavigator",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "edu.albanystate.campusnavigator"
+    }
+  }
+}
