@@ -34,7 +34,7 @@ Open the displayed QR code with the iPhone Camera or Expo Go on Android. Use Exp
 2. Return to Home and tap **Settings** in the bottom navigation. Tap **App appearance** to switch between light and dark.
 3. From Home, search for **BCB 119** or **142**, then tap the result to highlight it. Tap **Save room** and choose **Saved** to reopen it from your saved list.
 
-Garret confirmed the app opened on an iPhone through Expo Go. Metro exported the iOS and Android bundles successfully. Android hardware testing is pending.
+Garret confirmed Campus Navigator runs through Expo Go on a physical iPhone and a physical Android phone. Metro exported the iOS and Android bundles successfully.
 
 ## Group repository setup
 

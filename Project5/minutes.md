@@ -17,7 +17,7 @@ Garret Godwin
 
 ## My status notes for the meeting
 
-I used ChatGPT to generate and refine the React Native implementation. My focus is the building and room data from my Project 2 backend assignment. I used the existing BCB directory to support the search and floor map, and brought my Settings prototype into the native app. The app opened on an iPhone through Expo Go after updating the project to SDK 58 and running Metro with Node 22. Android bundle generation passed. I still need a physical Android or emulator walkthrough.
+I used ChatGPT to generate and refine the React Native implementation. My focus is the building and room data from my Project 2 backend assignment. I used the existing BCB directory to support the search and floor map, and brought my Settings prototype into the native app. After updating the project to SDK 58 and running Metro with Node 22, I confirmed the app runs through Expo Go on both my iPhone and my Android phone. Both platform bundles exported successfully.
 
 ## Product backlog status for discussion
 
@@ -26,6 +26,6 @@ I used ChatGPT to generate and refine the React Native implementation. My focus 
 | Package the BCB building, floor, and room directory for the Expo app | Implemented | 5 | Not recorded | Garret Godwin | Pending |
 | Connect search and room selection to the clean map | Implemented | 5 | Not recorded | Garret Godwin | Pending |
 | Implement Settings and saved rooms | Implemented | 5 | Not recorded | Garret Godwin | Pending |
-| Verify both native platforms | iPhone opened through Expo Go; both platform bundles exported; Android device walkthrough pending | 5 | Not recorded | Garret Godwin | Pending |
+| Verify both native platforms | Confirmed on physical iPhone and Android phones through Expo Go | 5 | Not recorded | Garret Godwin | Pending |
 
 The topics above are a proposed agenda and the status notes are an individual work record. Add the actual attendance, discussion, decisions, and next meeting date after confirming them.
